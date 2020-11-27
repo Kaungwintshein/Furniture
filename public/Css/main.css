@@ -1,11 +1,82 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+<<<<<<< HEAD
   font-family: "Poppins", sans-serif;
   
+=======
+  font-family: 'Jost',"Poppins", sans-serif;
+}
+/*kaung htet paing*/
+
+
+
+/*pt*/
+
+
+
+/*yannaing*/
+
+
+
+
+
+
+/* Kaung Wint Shein*/
+ul li{
+  list-style: none;
+  text-transform: capitalize;
+}
+.h2{
+  font-size: 2.83333rem;
+  line-height: 1.17647;
+  font-weight: 400;
+  color: #181818;;
+  margin-bottom: 0.66667rem;
+}
+.h4{
+  text-transform: uppercase;
+  font-size: 1.41667rem;
+  line-height: 1.64706;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 2.66667rem;
+}
+.p-join{
+  color: #686868;
+}
+.input-mail{
+  border: none;
+  /* border-bottom: 1px solid #686868; */
+}
+.subscribe-email{
+  border-bottom: 1px solid #686868;
+}
+.footer-bg-color{
+  background-color: #161616;
+  color: #fff;
+}
+.footer-text-color, .icon, .footer-contact{
+  color: #686868;
+}
+.footer-bottom{
+  background-color: #292929;
+}
+.icon:hover{
+  color: white;
+  cursor: pointer;
+}
+.footer-text-color:hover{
+  color: white;
+  cursor: pointer;
+}
+.footer-logo:hover{
+  cursor: pointer;
+>>>>>>> 5ef103c4cbb770ff7e75993f39b6e7b5d1e28f1b
 }
 html,body{
   font-size: 20px;
