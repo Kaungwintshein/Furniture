@@ -5,10 +5,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-<<<<<<< HEAD
-  font-family: "Poppins", sans-serif;
-  
-=======
   font-family: 'Jost',"Poppins", sans-serif;
 }
 /*kaung htet paing*/
@@ -73,10 +69,6 @@ ul li{
 .footer-text-color:hover{
   color: white;
   cursor: pointer;
-}
-.footer-logo:hover{
-  cursor: pointer;
->>>>>>> 5ef103c4cbb770ff7e75993f39b6e7b5d1e28f1b
 }
 html,body{
   font-size: 20px;
