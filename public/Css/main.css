@@ -16,6 +16,238 @@
 
 
 /*yannaing*/
+html,body{
+  font-size: 20px;
+  overflow-x: hidden;
+}
+#rower{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.full_row{
+  width: 100%;
+  height: 600px;
+}
+section{
+  margin: 80px 0px;
+}
+.clear_fix{
+  zoom: 1;
+}
+.clear_fix::after{
+  content: '';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+
+}
+/* ======================= Button =========================
+=================================================================== */
+
+/* =======================Container 6=========================
+=================================================================== */
+ .work_step div{
+    display: inline-block; 
+   font-size: 3em; 
+   float: left;
+   margin-right: 3%;
+}
+.work_step p{
+  font-size: 0.7em;
+}  
+
+/* =======================Container 7=========================
+=================================================================== */
+.container_7{
+  background-color: #EEEEEE;
+  display: grid;
+  grid-template-columns:50% 50%;
+}
+
+.con7_img1{
+  width: 100%;
+  height: 100%;
+ 
+}
+.con7 p{
+  font-size: 0.8em;
+  line-height: 1.8;
+  width: 60%;
+  margin-left: 15%;
+  padding-top: 13%;
+  
+  
+}
+.con7 p i{
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 2; 
+} 
+.container_7 .con7_img2{
+  width: 100%;
+  height: 100%;
+  
+}  
+.con7_data{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 40% 40%;
+  justify-content: start;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 5%;
+}
+.con7_data > div i{
+  font-size: 2.5em;
+  
+}
+.con7 button{
+  
+    background-color: black;
+    color: white;
+    padding:10px 20px;
+    margin: 20px 0 0 15%  ;
+    border: 1px solid black;
+    border-radius:5px;
+  
+}
+
+/* =======================Container 8=========================
+=================================================================== */
+.container_8{
+  text-align: center;
+}
+.container_8 img{
+  width: 70px;
+  height: 80px;
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+}
+.container_8 p{
+  font-size: 0.7em;
+}
+.product_price p{
+  font-size: 0.6em;
+}
+.product_price p span{
+  font-size: 16px;
+}
+.product_price p i{
+  font-size: 1.5em;
+}
+
+/* =======================Container 9=========================
+=================================================================== */
+.container_9{
+  text-align: center;
+}
+.con9 p{
+  font-size: 0.7em;
+}
+.icon{
+  font-size: 3em;
+}
+/* =======================Media quaries=========================
+=================================================================== */
+@media only screen and (max-width: 1200px){
+  .con7 button{
+   margin-bottom: 40px;
+  }
+  
+}
+@media only screen and (max-width : 1023px){
+  .container_6 div{
+    display: block;
+    margin: 0;
+  }
+  .work_step div{
+    margin-right: 20px;
+    font-size: 1.5em;
+  }
+  .container_7{
+    display: block;
+   
+  }
+  .con7 p{
+    font-size: 1em;
+    line-height: 1.5;
+    width: 80%;
+    padding-top: 8%;
+    margin: 30px;
+  }
+  .con7 button{
+    margin:30px
+   }
+   .con7_data{
+    padding-bottom: 5%;
+  }
+  .con7_data p{
+    margin: 0;
+  }
+  .con7_data > div i{
+    font-size: 2em;
+    
+  }
+  .container_8 img {
+    width: 77px;
+    height: 121px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+  }
+  .product_price p {
+    font-size: 0.5em;
+  }
+    
+}
+  
+      
+
+
+@media only screen and (max-width : 767px){
+  .container_7{
+    font-size: 16px;
+  }
+  .con7 button{
+    padding:10px 20px;
+    margin: 5px 0 0 10%  ;
+  }
+  .container_8 img {
+    width: 70px;
+    height: 80px;
+    display: block;
+  }
+  .product_price p{
+    display: inline-block;
+  }
+
+}
+@media only screen and (max-width : 480px){
+  .container_8 div{
+    display: block;
+  }
+  .container_9 div{
+    display: block;
+  }
+
+
+}
+@media only screen and (max-width : 368px){
+  
+  .work_step div{
+    display: block; 
+    font-size: 20px;
+    margin-right: 5px;
+   }
+ .work_step p{
+  font-size: 0.8em;
+
+ }  
+
+}
+
 
 
 
@@ -69,132 +301,6 @@ ul li{
 .footer-text-color:hover{
   color: white;
   cursor: pointer;
-}
-html,body{
-  font-size: 20px;
-  overflow-x: hidden;
-}
-.row{
-  max-width: 1140px;
-  margin: 0 auto;
-}
-.full_row{
-  width: 100%;
-  height: 600px;
-}
-section{
-  margin: 80px 0px;
-}
-.clear_fix{
-  zoom: 1;
-}
-.clear_fix::after{
-  content: '';
-  clear: both;
-  display: block;
-  height: 0;
-  visibility: hidden;
-
-}
-/* ======================= Button =========================
-=================================================================== */
-button{
-  background-color: black;
-  color: white;
-  padding:10px 20px;
-  margin: 20px 0 0 15%  ;
-  border: 1px solid black;
-  border-radius:5px;
-}
-/* =======================Container 6=========================
-=================================================================== */
- .work_step div{
-   display: inline-block;
-   font-size: 3em; 
-   float: left;
-   margin-right: 15%;
-}
-.work_step p{
-  font-size: 0.7em;
-}  
-
-/* =======================Container 7=========================
-=================================================================== */
-.container_7{
-  background-color: #EEEEEE;
-  display: grid;
-  grid-template-columns:50% 50%;
-}
-
-.con7_img1{
-  width: 100%;
-  height: 100%;
- 
-}
-.con7 p{
-  font-size: 0.8em;
-  line-height: 1.8;
-  width: 60%;
-  margin-left: 15%;
-  padding-top: 13%;
-  
-  
-}
-.con7 p i{
-  font-size: 1.5em;
-  font-weight: bold;
-  line-height: 2; 
-} 
-.container_7 .con7_img2{
-  width: 100%;
-  height: 100%;
-  
-}  
-.con7_data{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 40% 40%;
-  justify-content: start;
-  text-align: center;
-  width: 100%;
-  padding-bottom: 5%;
-}
-.con7_data > div i{
-  font-size: 2.5em;
-  
-}
-
-/* =======================Container 8=========================
-=================================================================== */
-.container_8{
-  text-align: center;
-}
-.container_8 img{
-  width: 70px;
-  height: 80px;
-  display: inline-block;
-  float: left;
-  margin-right: 20px;
-}
-.container_8 p{
-  font-size: 0.7em;
-}
-.product_price p{
-  font-size: 0.6em;
-}
-.product_price p span{
-  font-size: 16px;
-}
-/* =======================Container 9=========================
-=================================================================== */
-.container_9{
-  text-align: center;
-}
-.con9 p{
-  font-size: 0.7em;
-}
-.icon{
-  font-size: 3em;
 }
 
 
