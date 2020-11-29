@@ -72,7 +72,6 @@ ul li{
 }
 html,body{
   font-size: 20px;
-  overflow-x: hidden;
 }
 .row{
   max-width: 1140px;
