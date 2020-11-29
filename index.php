@@ -3,6 +3,7 @@
 
 <head>
   <title>Furniture store</title>
+<<<<<<< HEAD:index.php
   <!-- head css links -->
   <link rel="stylesheet" href="/public/css/style.css">
   <?php include dirname(__FILE__).'/php/includes/head.php'; ?>
@@ -10,6 +11,17 @@
   <link rel="stylesheet" href="/public/dist/css/grid.css">
   <link rel="stylesheet" href="/public/css/index.css">
   
+=======
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Furniture store</title>
+  <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./public/css/style.css">
+  <link rel="stylesheet" href="./public/Css/main.css">
+  <link rel="stylesheet" href="./public/Css/grid.css">
+
+>>>>>>> 4c926ff491bf5d2ba37b7318c0a8afe6399ede8c:index.html
 </head>
 
 <body>
@@ -46,7 +58,7 @@
         </a>
       </li>
       <li>
-        <a href="#" class="text-dark text-capitalize link">Shop</a>
+        <a href="/shop.html" class="text-dark text-capitalize link">Shop</a>
       </li>
       <li>
         <a href="#" class="text-dark text-capitalize link">Projects</a>
@@ -387,7 +399,7 @@
       </div>
       <div class="col span_1_of_4">
         <img src="images/product-10-img-1.jpg" alt="product10">
-        <div class="product_price">
+        <div class="product_pr  ice">
           <p><span>Rack Small</span><br>
             Etiam mauris nulla, sodales no<br>
             <i>$310.00</i>
@@ -495,8 +507,16 @@
   <!--********************************** Kaung Wint Shein *************************************** -->
   <?php 
 
+<<<<<<< HEAD:index.php
     // ----------------Footer-------------
     include dirname(__FILE__).'/php/includes/footer.php' ;
+=======
+  <script src="./public/Js/jquery-3.5.1.min.js"></script>
+  <script src="./public/Js/bootstrap.bundle.min.js"></script>
+  <script src="./public/Js/fontawsome.js"></script>
+  <script src="./public/Js/header.js"></script>
+  <script src="./public/Js/main.js"></script>
+>>>>>>> 4c926ff491bf5d2ba37b7318c0a8afe6399ede8c:index.html
 
     // ----------------Scripts-------------
     // include dirname(__FILE__).'/php/includes/script.php';

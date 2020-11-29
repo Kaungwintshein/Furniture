@@ -64,7 +64,10 @@
 /*yannaing*/
 html,body{
   font-size: 20px;
+<<<<<<< HEAD:public/css/index.css
   /* overflow-x: hidden; */
+=======
+>>>>>>> 4c926ff491bf5d2ba37b7318c0a8afe6399ede8c:public/Css/main.css
 }
 #rower{
   max-width: 1140px;
