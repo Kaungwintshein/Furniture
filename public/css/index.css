@@ -7,18 +7,64 @@
   box-sizing: border-box;
   font-family: 'Jost',"Poppins", sans-serif;
 }
-/*kaung htet paing*/
 
 
 
-/*pt*/
-
+/*sai saing hein*/
+#container-fluid-me{
+  padding: 0;
+}
+.img_showcase_container{
+  position: relative;
+}
+.img_hover_text{
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0;
+  bottom: 0;
+}
+.img_hover_text h1{
+  position: absolute;
+  font-size: 1.3rem;
+  color: #181818;
+  top: 50%;
+  left: 30%;
+}
+.img_hover_text p{
+  position: absolute;
+  font-size: 0.95rem;
+  color: #a5a5a5;
+  top: 60%;
+  left: 30%;
+}
+.img_showcase_container:hover .img_hover_text{
+  cursor: pointer;
+  background-color: #fff;
+  display: block;
+  opacity: 0.85;
+  animation: bottomToMid 1s;
+}
+@keyframes bottomToMid{
+  0%{
+    top: 70%;
+  }
+  100%{
+    top: 0%;
+  }
+}
+@media (max-width: 756px){
+  .img_hover_content{
+    flex-wrap: wrap;
+  }
+}
 
 
 /*yannaing*/
 html,body{
   font-size: 20px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 #rower{
   max-width: 1140px;
@@ -268,7 +314,7 @@ ul li{
 }
 .h4{
   text-transform: uppercase;
-  font-size: 1.41667rem;
+  font-size: 1rem;
   line-height: 1.64706;
   font-weight: 400;
   color: #fff;
@@ -290,6 +336,11 @@ ul li{
 }
 .footer-text-color, .icon, .footer-contact{
   color: #686868;
+  font-size: 0.8rem;
+}
+.icon{
+  color: #686868;
+  font-size: 25px;
 }
 .footer-bottom{
   background-color: #292929;
@@ -302,6 +353,10 @@ ul li{
   color: white;
   cursor: pointer;
 }
-
-
-
+@media (max-width: 768){
+  .container{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+}

@@ -4,17 +4,16 @@
 
     <div class="container mt-5">
       <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-7 text-left subscribe-email clear-fix">
-          <!-- <p class="float-left">Your Email Address</p> -->
+        <div class="col-md-2 col-sm-0"></div>
+        <div class="col-md-8 col-sm-12 text-left subscribe-email clear-fix">
+          
           <input class="input-mail float-left" type="text" placeholder="Your Email Address"> 
           <p class="text-right">subscribe</p>
         </div>
-        <div class="col-md-3"></div>
+        <div class="col-md-2 col-sm-0"></div>
       </div>
     </div>
-  </div>
-
+</div>
 
   <footer class="footer-bg-color pt-5">
     <div class="container">

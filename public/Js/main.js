@@ -64,19 +64,19 @@ if (auto) {
 
 let data = [
   {
-    img: "./images/person-1.jpg",
+    img: "/images/person-1.jpg",
     name: "peter doe",
     job: "product manager",
     text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quoeius recusandae officia voluptas sint deserunt dicta nihil nam omnis? `,
   },
   {
-    img: "./images/person-2.jpg",
+    img: "/images/person-2.jpg",
     name: "susan doe",
     job: "developer",
     text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quoeius recusandae officia voluptas sint deserunt dicta nihil nam omnis?`,
   },
   {
-    img: "./images/person-3.jpg",
+    img: "/images/person-3.jpg",
     name: "emma doe",
     job: "designer",
     text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quoeius recusandae officia voluptas sint deserunt dicta nihil nam omnis?`,
@@ -216,3 +216,29 @@ let articlesdata = [
     designer: "John",
   },
 ];
+
+
+// **********************************Sai Saing Hein***************************************
+// Slider
+$(document).ready(function(){
+  $('.customer-logos').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 4
+      }
+    }, {
+      breakpoint: 520,
+      settings: {
+        slidesToShow: 3
+      }
+    }]
+  });
+});

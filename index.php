@@ -3,21 +3,13 @@
 
 <head>
   <title>Furniture store</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Furniture store</title>
-
-  <!-- <link rel="stylesheet" href="./public/Css/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="./public/Css/main.css">
-  <link rel="stylesheet" href="./public/Css/grid.css">
-  <link rel="stylesheet" href="./public/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./public/css/style.css">
-
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-
+  <!-- head css links -->
+  <link rel="stylesheet" href="/public/css/style.css">
+  <?php include dirname(__FILE__).'/php/includes/head.php'; ?>
+  <!-- library -->
+  <link rel="stylesheet" href="/public/dist/css/grid.css">
+  <link rel="stylesheet" href="/public/css/index.css">
+  
 </head>
 
 <body>
@@ -136,7 +128,87 @@
       <button id="next"></button>
     </div>
   </div>
+  <!-- **********************************Sai Saing Hein*************************************** -->
 
+<div class="container-fluid" id="container-fluid-me">
+  <div class="d-flex img_hover_content">
+    <div class="img_showcase_container">
+        <div class="container-fluid img_hover_text">
+          <h1>Elle Decoration</h1>
+          <p>Art, Handmade</p>
+        </div>
+        <img class="img-fluid" src="/images/portfolio-img-01.jpg" alt="">
+      
+    </div>
+    
+    <div class="img_showcase_container">
+        <div class="container-fluid img_hover_text">
+          <h1>Elle Decoration</h1>
+          <p>Art, Handmade</p>
+        </div>
+        <img class="img-fluid" src="/images/portfolio-img-02.jpg" alt="">
+      
+    </div>
+
+    <div class="img_showcase_container">
+        <div class="container-fluid img_hover_text">
+          <h1>Elle Decoration</h1>
+          <p>Art, Handmade</p>
+        </div>
+        <img class="img-fluid" src="/images/portfolio-img-03.jpg" alt="">
+      
+    </div>
+
+    <div class="img_showcase_container">
+        <div class="container-fluid img_hover_text">
+          <h1>Elle Decoration</h1>
+          <p>Art, Handmade</p>
+        </div>
+        <img class="img-fluid" src="/images/portfolio-img-04.jpg" alt="">
+      
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="container-fluid-me">
+  <div class="d-flex img_hover_content">
+    <div class="img_showcase_container">
+        <div class="container-fluid img_hover_text">
+          <h1>Elle Decoration</h1>
+          <p>Art, Handmade</p>
+        </div>
+        <img class="img-fluid" src="/images/portfolio-img-05.jpg" alt="">
+      
+    </div>
+    
+    <div class="img_showcase_container">
+        <div class="container-fluid img_hover_text">
+          <h1>Elle Decoration</h1>
+          <p>Art, Handmade</p>
+        </div>
+        <img class="img-fluid" src="/images/portfolio-img-06.jpg" alt="">
+      
+    </div>
+
+    <div class="img_showcase_container">
+        <div class="container-fluid img_hover_text">
+          <h1>Elle Decoration</h1>
+          <p>Art, Handmade</p>
+        </div>
+        <img class="img-fluid" src="/images/portfolio-img-07.jpg" alt="">
+      
+    </div>
+
+    <div class="img_showcase_container">
+        <div class="container-fluid img_hover_text">
+          <h1>Elle Decoration</h1>
+          <p>Art, Handmade</p>
+        </div>
+        <img class="img-fluid" src="/images/portfolio-img-08.jpg" alt="">
+      
+    </div>
+  </div>
+</div>
   <!--**********************************sithuyannaing*************************************** -->
   <section class="container_6 clear_fix">
     <div class="row" id="rower">
@@ -421,14 +493,15 @@
 
 
   <!--********************************** Kaung Wint Shein *************************************** -->
-  <?php include dirname(__FILE__).'/php/includes/footer.php' ?>
+  <?php 
 
+    // ----------------Footer-------------
+    include dirname(__FILE__).'/php/includes/footer.php' ;
 
-  <script src="./public/Js/jquery-3.5.1.min.js"></script>
-  <script src="./public/Js/bootstrap.bundle.min.js"></script>
-  <script src="./public/Js/fontawsome.js"></script>
-  <script src="./public/Js/main.js"></script>
-
+    // ----------------Scripts-------------
+    // include dirname(__FILE__).'/php/includes/script.php';
+  ?>
+    <script src="/public/Js/main.js"></script>
 </body>
 
 </html>
