@@ -19,7 +19,7 @@
             <a href="/" class="text-dark text-capitalize link">Home</a>
         </li>
         <li>
-            <a href="#" class="text-dark text-capitalize link">Pages</a>
+            <a href="/about-us.php" class="text-dark text-capitalize link">About</a>
         </li>
         <li>
             <a href="#" class="text-dark text-capitalize link">Journal</a>
@@ -36,7 +36,7 @@
             <a href="#" class="text-dark text-capitalize link">Projects</a>
         </li>
         <li>
-            <a href="#" class="text-dark text-capitalize link">Contact</a>
+            <a href="/contact.php" class="text-dark text-capitalize link">Contact</a>
         </li>
     </ul>
     <div class="search-card">
