@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <title>Contact Us-Furniture store</title>
+    <link rel="stylesheet" href="/public/css/style.css">
     <?php include dirname(__FILE__).'/php/includes/head.php'; ?>
-    <?php include dirname(__FILE__).'/php/includes/script.php'; ?>
-    <!-- <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/public/css/bootstrap.min.css">
-<link rel="stylesheet" href="/public/css/index.css"> -->
     <link rel="stylesheet" href="/public/css/contact.css">
+  <link rel="stylesheet" href="/public/css/index.css">
+    <?php include dirname(__FILE__).'/php/includes/script.php'; ?>
 </head>
 <body>
+
+  <!--********************************** Kaung Htet Paing *************************************** -->
+  <?php include dirname(__FILE__)."/php/includes/header.php" ; ?>
     <div class="heading-container d-flex">
         <div class="heading-img-container">
             <div class="heading-bg-img"></div>
