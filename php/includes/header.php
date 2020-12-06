@@ -1,11 +1,11 @@
 <!-- navbar -->
 <nav class="nav-container">
     <div class="logo">
-        <a href="#" class='text-uppercase text-dark logo-link-desktop'>
+        <a href="/" class='text-uppercase text-dark logo-link-desktop'>
             <img src="./images/heart.svg" alt="logo">
             Whitlist
         </a>
-        <a href="#" class='text-uppercase text-dark logo-link-phone'>
+        <a href="/" class='text-uppercase text-dark logo-link-phone'>
             <img src="./images/logo.svg" alt="logo" class='logo-img'>
         </a>
         <div class='navbar-icon'>
@@ -16,7 +16,7 @@
     </div>
     <ul class="nav">
         <li>
-            <a href="#" class="text-dark text-capitalize link">Home</a>
+            <a href="/" class="text-dark text-capitalize link">Home</a>
         </li>
         <li>
             <a href="#" class="text-dark text-capitalize link">Pages</a>
@@ -30,7 +30,7 @@
             </a>
         </li>
         <li>
-            <a href="/shop.html" class="text-dark text-capitalize link link-active">Shop</a>
+            <a href="/shop.php" class="text-dark text-capitalize link ">Shop</a>
         </li>
         <li>
             <a href="#" class="text-dark text-capitalize link">Projects</a>

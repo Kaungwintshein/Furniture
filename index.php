@@ -5,8 +5,9 @@
   <title>Furniture store</title>
 
   <!-- head css links -->
-  <link rel="stylesheet" href="/public/css/style.css">
-  <?php include dirname(__FILE__).'/php/includes/head.php'; ?>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <?php include dirname(__FILE__).'/php/includes/head.php'; ?>
+    
   <!-- library -->
   <link rel="stylesheet" href="/public/dist/css/grid.css">
   <link rel="stylesheet" href="/public/css/index.css">
