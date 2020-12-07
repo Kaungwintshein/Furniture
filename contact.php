@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
     <title>Contact Us-Furniture store</title>
-    <?php include dirname(__FILE__).'/php/includes/head.php' ?>
-    <link rel="stylesheet" href="/public/Css/contact.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <?php include dirname(__FILE__).'/php/includes/head.php'; ?>
+    <link rel="stylesheet" href="/public/css/contact.css">
+  <link rel="stylesheet" href="/public/css/index.css">
+    <?php include dirname(__FILE__).'/php/includes/script.php'; ?>
 </head>
 <body>
+
+  <!--********************************** Kaung Htet Paing *************************************** -->
+  <?php include dirname(__FILE__)."/php/includes/header.php" ; ?>
     <div class="heading-container d-flex">
         <div class="heading-img-container">
             <div class="heading-bg-img"></div>
@@ -102,7 +108,12 @@
 
     <?php 
         include dirname(__FILE__).'/php/includes/footer.php'; 
-        include dirname(__FILE__).'/php/includes/script.php'; 
+        
     ?>
+    
+    <!-- <script src="./public/Js/jquery-3.5.1.min.js"></script>
+    <script src="./public/Js/bootstrap.bundle.min.js"></script>
+    <script src="./public/Js/fontawsome.js"></script> -->
 </body>
+
 </html>
