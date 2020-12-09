@@ -1,3 +1,7 @@
+<?php 
+      include "php/config/create-db.php";
+      $db = new CreateDb("reeco","product","category","auth","localhost","root","123456");  
+?>
 <!DOCTYPE html>
 <html lang="en">
 
