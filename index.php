@@ -1,6 +1,6 @@
 <?php 
       include "php/config/create-db.php";
-      $db = new CreateDb("reeco","product","category","auth","localhost","root","123456");  
+      $db = new CreateDb("reeco","product","category","auth","localhost","root","new_password");  
 ?>
 <!DOCTYPE html>
 <html lang="en">
