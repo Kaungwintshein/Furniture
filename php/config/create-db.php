@@ -1,7 +1,6 @@
 <?php
 
 
-
 class CreateDb
 {
         public $servername;
@@ -58,7 +57,8 @@ class CreateDb
             $sql = " CREATE TABLE IF NOT EXISTS $item
                             (id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
                              item_name VARCHAR (255) NOT NULL,
-                             price VARCHAR (255) NOT NULL,
+                             category_id INT NOT NULL,
+                             price 	DECIMAL (10,2)	 NOT NULL,
                              detail VARCHAR (255) NOT NULL,
                              img VARCHAR (255) NOT NULL,
                              created_date DATETIME NOT NULL
@@ -81,6 +81,7 @@ class CreateDb
             // sql to create new table
             $sql = " CREATE TABLE IF NOT EXISTS $category
                             (id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                            category_img VARCHAR (255) NOT NULL,
                              category_name VARCHAR (255) NOT NULL
                             );";
 
