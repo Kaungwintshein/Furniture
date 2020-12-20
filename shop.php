@@ -1,3 +1,6 @@
+<?php
+    include "php/config/auth.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +30,7 @@
 
     <!-- modal box -->
     <div id="modal">
-
+    
     </div>
 <!--********************************** Kaung Wint Shein *************************************** -->
 <?php 

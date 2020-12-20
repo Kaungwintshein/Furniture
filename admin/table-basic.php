@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>Table - basic</title>
     <?php 
         include "php/includes/head.php";
         include "php/includes/script.php";
+        include "php/config/config.php";
     ?>
 </head>
 <body>
@@ -30,7 +31,7 @@
                 <div class="animated fadeIn">
                     <div class="row">
                         <div style="overflow-x:auto;" class="col-lg-12 col-sm-12">
-                        <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#exampleModal">
+                        <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#addProduct">
                             Create New
                         </button>
                             <table class="table">
@@ -40,7 +41,8 @@
                                         <th scope="col">Product Name</th>
                                         <th scope="col">Product Price</th>
                                         <th scope="col">Product type</th>
-                                        <th scope="col">Images</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">Image</th>
                                         <th scope="col">Created Date</th>
                                         <th></th>
                                         <th></th>
@@ -48,9 +50,26 @@
                                 </thead>
                                 <tbody>
 
-
-                                    <?php //Show All Here ?>
-
+                                    <!-- Show Data -->
+                                    <?php 
+                                        $products = mysqli_query($conn,"SELECT * FROM product");
+                                        foreach($products as $product){
+                                            echo "<tr>";
+                                            echo "<td>{$product['id']} </td>";
+                                            echo "<td>{$product['product_name']} </td>";
+                                            echo "<td>{$product['price']} </td>";
+                                            echo "<td>{$product['category_type']} </td>";
+                                            echo "<td>{$product['detail']} </td>";
+                                            echo "<td>{$product['img']} </td>";
+                                            echo "<td>{$product['created_date']} </td>";
+                                            echo "<td><button type='submit' class='btn btn-danger' onclick='delete_data({$product['id']},\"php/actions/productDel.php\")'>DELETE</button></td>";
+                                            //echo "<td><button type='button' class='btn btn-primary mb-3' onclick='editProduct({$product['id']},{$product['category_id']},\"NAme\")'>EDIT</button></td>";
+                                            //echo "<td><a href='/admin/modal.php?id={$product['id']}' class='btn btn-primary mb-3 editbtn'>Edit</a></td>";
+                                            echo "<td><button type='submit' class='btn btn-primary mb-3 editbtn'>Edit</button></td>";
+                                            echo "</tr>";
+                                        }
+                                    ?>
+    
 
 
                                 </tbody>
@@ -63,47 +82,47 @@
         </div>
     </div>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Create New Product</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form action="" method="POST" enctype="multipart/form-data">
-                    <div class="form-group">
-                        <label for="product_name">Product Name or Product Code</label>
-                        <input type="text" class="form-control" id="product_name" name="product_name" aria-describedby="emailHelp" required>
-                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                    </div>
-                    <div class="form-group">
-                        <label for="product_price">Price</label>
-                        <input type="text" class="form-control" id="product_price" name="product_price" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="product_type">Product Type</label>
-                        <select class="form-control" id="product_type" name="product_type" required>
-                            <option>Men</option>
-                            <option>Women</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="image">Upload Image</label>
-                        <input type="file" class="form-control-file" id="image_upload" name="image_upload" required>
-                    </div>
-                    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" name="submitBtn" class="btn btn-primary">Create</button>
-                    </div>
-                </form>
-            </div>
-        
-        </div>
-    </div>
-</div>
+<script>
+        $(".editbtn").on("click",function(){
+            $("#editData").modal("show");
+
+            $tr = $(this).closest('tr');
+
+            var data = $tr.children("td").map(function(){
+                return $(this).text();
+            });
+            $("#product_id").val(data[0]);
+            $("#update_product_name").val(data[1]);
+            $("#update_product_price").val(data[2]);
+            $("#update_category_type").val(data[3]);
+            $("#update_description").val(data[4]);
+            $("#update_image").val(data[5]);
+        });
+
+        // function editProduct(id,cat_id,pd_name){  
+        //     //$(".editbtn").on("click",function(){
+        //         $("#editData").modal("show");
+
+        //         var id = id;
+        //         var cat_id = cat_id;
+        //         var pd_name = pd_name;
+        //         $.ajax({
+        //             type: 'POST',
+        //             url: "/admin/table-basic.php",
+        //             data: {
+        //                 "id":id,
+        //                 "cat_id": cat_id,
+        //                 "pd_name": pd_name,
+        //             },
+        //             success: function(data){
+        //             },
+        //         });
+        //     //});
+        // };
+    </script>
+
+<?php 
+    include "./modal.php";
+?>
 </body>
 </html>

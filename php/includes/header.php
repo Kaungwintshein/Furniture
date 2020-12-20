@@ -40,9 +40,6 @@
         </li>
     </ul>
     <div class="search-card">
-        <a href="#" class="text-dark search">
-            <i class="fas fa-search"></i>
-        </a>
         <a href="#" class="text-dark cart-box">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -53,6 +50,11 @@
             </svg>
             <span class="rounded-circle bg-dark text-white"> 0</span>
         </a>
+        <!-- <img src="/images/person-1.jpg" class="rounded-circle" alt=""> -->
+
+        <div class="user-profile-dropdown--dropdown-button-avatar--Cbd6V udlite-avatar udlite-heading-sm" aria-hidden="true" style="width: 3.2rem; height: 3.2rem; background: rgb(77, 171, 101) none repeat scroll 0% 0%;">
+        KS
+        </div>
     </div>
 </nav>
 

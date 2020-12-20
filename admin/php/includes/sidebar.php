@@ -17,6 +17,12 @@
                     <li>
                         <a href="table-basic.php"><i class="fas fa-table mr-4"></i>Table basic</a>
                     </li>
+                    <!-- <li>
+                        <a href="table-category.php"><i class="fas fa-table mr-4"></i>Table Category</a>
+                    </li> -->
+                    <li>
+                        <a href="table-user.php"><i class="fas fa-table mr-4"></i>Table User</a>
+                    </li>
                 </ul>
             </li>
             <h3 class="menu-title-me">Extras</h3>

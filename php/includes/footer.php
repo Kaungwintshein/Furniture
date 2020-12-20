@@ -71,7 +71,7 @@
         <div class="col-sm-6 p-2">&copy;2020 Reco. All rights reserved.</div>
         <div class="col-sm-6 text-center">
           <div class="d-flex">
-            <ul class="list-inline mx-auto justify-content-center">
+            <ul style="margin-bottom: 0rem" class="list-inline mx-auto justify-content-center">
               <li class="list-inline-item p-2 footer-logo">Fb.</li>
               <li class="list-inline-item p-2 footer-logo">Tw.</li>
               <li class="list-inline-item p-2 footer-logo">in.</li>

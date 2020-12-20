@@ -1,6 +1,8 @@
 <?php 
+      include "php/config/config.php";
       include "php/config/create-db.php";
-      $db = new CreateDb("reeco","product","category","auth","localhost","root","123456");  
+      include "php/config/auth.php";
+      $db = new CreateDb("reeco","product","category","auth","localhost","root","123456");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,6 +17,8 @@
   <!-- library -->
   <link rel="stylesheet" href="/public/dist/css/grid.css">
   <link rel="stylesheet" href="/public/css/index.css">
+
+  <?php  ?>
 
 </head>
 
@@ -144,7 +148,7 @@
         sunt in culpa qui officia deserunt mollitia animi.
       </p>
       <div>
-        <button>Find Funiture</button>
+        <a href="/shop.php"><button>Find Funiture</button></a>
       </div>
     </div>
 
@@ -184,16 +188,32 @@
     </div>
 
     <div class="row" id="rower">
+
+    <?php 
+      // $result = mysqli_query($conn, "SELECT * FROM product");
+
+      // while($row=mysqli_fetch_assoc($result)):
+    ?>
+      <!-- <div class="col span_1_of_4">
+        <img src="<?php //echo $row['img'] ?>" alt="product1">
+        <div class="product_price">
+          <p><span><?php //echo $row['name'] ?></span><br>
+            <i><?php //echo $row['price'] ?></i>
+          </p>
+        </div>
+      </div> -->
+      <?php //endwhile; ?>
+
       <div class="col span_1_of_4">
         <img src="images/product-1-img-1.jpg" alt="product1">
         <div class="product_price">
           <p><span>Rack Small</span><br>
-            Etiam mauris nulla, sodales no<br>
+            <!-- Etiam mauris nulla, sodales no<br> -->
             <i>$310.00</i>
           </p>
-          
         </div>
       </div>
+
       <div class="col span_1_of_4">
         <img src="images/product-2-img-1.jpg" alt="product2">
         <div class="product_price">
